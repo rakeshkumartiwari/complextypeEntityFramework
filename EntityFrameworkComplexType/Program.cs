@@ -75,6 +75,9 @@ namespace EntityFrameworkComplexType
         public SchoolDb()
             : base()
         {
+
+
+
             Database.SetInitializer<SchoolDb>(new DropCreateDatabaseAlways<SchoolDb>());
         }
         public IDbSet<Student> Students { get; set; }
